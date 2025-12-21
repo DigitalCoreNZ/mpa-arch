@@ -71,6 +71,10 @@ def append_yaml_config(source_file, target_file):
             print(f"Error: Target config file not found at {target_file}")
             return False
         
+        # Read the original target file content
+        with open(target_file, 'r') as f:
+            original_content = f.read()
+        
         # Load existing data from the target file
         with open(target_file, 'r') as target:
             existing_data = yaml.safe_load(target) or {}
@@ -88,7 +92,12 @@ def append_yaml_config(source_file, target_file):
         
         # Write the updated data back to the target file
         with open(target_file, 'w') as target:
-            yaml.dump(existing_data, target, default_flow_style=False)
+            # Write the original content first
+            target.write(original_content)
+            # Add a separator
+            target.write("\n\n")
+            # Write the new entries
+            yaml.dump(new_data, target, default_flow_style=False)
         
         return True
     except Exception as e:

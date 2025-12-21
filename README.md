@@ -73,8 +73,6 @@ MetaPromptAgent/
 
 ## Installing the MetaPromptAgent
 
-There are two installers to choose from: A Bash script called 'install.sh' and a Python script called 'install.py'. They both automate the installation of the MetaPromptAgent. Audit the scripts and run the one that you trust, and understand, the most. Also, there are uninstall scripts called 'uninstall.sh' and 'uninstall.py' that unwind all the changes that were during the installation. BTW, the MetaPromptAgent is called ```Aimee```.
-
 **Step 1:** Open an Ubuntu terminal with ```CTRL + ALT + T```.
 
 **Step 2:** Use Git to clone the GitHub repository:
