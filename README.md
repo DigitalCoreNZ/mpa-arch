@@ -1,7 +1,7 @@
 # MetaPromptAgent for BMAD v6 Public Alpha
 
 ## Project Overview
-MetaPromptAgent is a specialist BMAD agent designed to transform user "vibe code" (informal instructions and ideas) into comprehensive meta prompts that guide Large Language Models (LLMs) to perform complex tasks with appropriate tools and workflows.
+MetaPromptAgent is a specialist BMAD architect designed to transform user "vibe code" (informal instructions and ideas) into comprehensive meta prompts that guide Large Language Models (LLMs) to perform complex tasks with appropriate tools and workflows.
 
 Version: v0.3.1
 
@@ -38,7 +38,6 @@ MetaPromptAgent/
 │       ├── agents/
 │       │   └── mpa-agent.yaml          # MetaPromptAgent definition
 │       └── workflows/
-│           ├── cleanup-old-workflows.sh
 │           ├── create-agent/
 │           │   ├── mpa-agent.md
 │           │   └── mpa-workflow.md
@@ -67,11 +66,9 @@ MetaPromptAgent/
 │
 |
 ├── install.py                          # Python install script
-├── install.sh                          # Bash install script
 ├── install.yaml                        # Install configuration
 ├── README.md                           # This file
 └── uninstall.py                        # Python uninstall script
-└── uninstall.sh                        # Bash uninstall script
 ```
 
 ## Installing the MetaPromptAgent
