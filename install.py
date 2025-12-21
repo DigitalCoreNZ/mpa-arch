@@ -66,6 +66,11 @@ def append_yaml_config(source_file, target_file):
     This function handles dictionary merging rather than list merging.
     """
     try:
+        # Check if target file exists
+        if not os.path.exists(target_file):
+            print(f"Error: Target config file not found at {target_file}")
+            return False
+        
         # Load existing data from the target file
         with open(target_file, 'r') as target:
             existing_data = yaml.safe_load(target) or {}
