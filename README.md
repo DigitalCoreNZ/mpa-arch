@@ -4,6 +4,7 @@
 MetaPromptAgent is a specialist BMAD agent designed to transform user "vibe code" (informal instructions and ideas) into comprehensive meta prompts that guide Large Language Models (LLMs) to perform complex tasks with appropriate tools and workflows.
 
 Version: v0.3.1
+
 Target Platform: BMAD v6-public-alpha
 
 ## Workflow
