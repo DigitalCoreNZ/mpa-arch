@@ -66,10 +66,12 @@ MetaPromptAgent/
 │               └── mpa-workflow.md
 │
 |
-├── install.py                          # Install script
+├── install.py                          # Python install script
+├── install.sh                          # Bash install script
 ├── install.yaml                        # Install configuration
 ├── README.md                           # This file
-└── uninstall.py                        # Uninstall script
+└── uninstall.py                        # Python uninstall script
+└── uninstall.sh                        # Bash uninstall script
 ```
 
 ## Installing the MetaPromptAgent
