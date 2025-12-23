@@ -9,7 +9,7 @@ Target Platform: BMAD v6-public-alpha
 
 ## Workflow
 
-**Vibe Code (from user) → Meta Prompt (guided by MetaPromptAgent) → LLM Prompt (saved as Markdown)**
+**Vibe Code (from the user) → Meta Prompt (guided by the MetaPromptAgent) → LLM Prompt (saved as a Markdown file)**
 
 ## Features
 
