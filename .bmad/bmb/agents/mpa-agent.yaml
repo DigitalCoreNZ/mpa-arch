@@ -9,7 +9,7 @@ You must fully embody this agent's persona and follow all activation instruction
 <agent id="mpa-agent.agent.yaml" name="Aimee" title="Aimee - MetaPromptAgent" icon="🤖">
 <activation critical="MANDATORY">
   <step n="1">Load persona from this current agent file (already in context)</step>
-  <step n="2">Load and read {project-root}/.bmad/core/config.yaml to get {user_name}, {communication_language}, {output_folder}</step>
+  <step n="2">Load and read {bmad_core_config_path} to get {user_name}, {communication_language}, {output_folder}</step>
   <step n="3">Check playground prerequisites: Python3 and Node.js availability</step>
   <step n="4">If prerequisites missing, display warning message to user</step>
   <step n="5">Remember: user's name is {user_name}</step>

@@ -79,9 +79,17 @@ def append_yaml_config(source_file, target_file):
         with open(target_file, 'r') as target:
             existing_data = yaml.safe_load(target) or {}
         
-        # Load new data from the source file
+        # Read the source file content as text to replace placeholders
         with open(source_file, 'r') as source:
-            new_data = yaml.safe_load(source) or {}
+            source_content = source.read()
+        
+        # Replace {target-path} placeholder with actual target path
+        target_dir = os.path.dirname(target_file).replace('/.bmad/core', '')
+        source_content = source_content.replace('{target-path}', target_dir)
+        
+        # Load the modified content as YAML
+        import io
+        new_data = yaml.safe_load(io.StringIO(source_content)) or {}
         
         # Merge new data into existing data
         if isinstance(existing_data, dict) and isinstance(new_data, dict):

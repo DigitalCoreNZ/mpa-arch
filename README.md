@@ -3,7 +3,7 @@
 ## Project Overview
 MetaPromptAgent is a specialist BMAD architect designed to transform user "vibe code" (informal instructions and ideas) into comprehensive meta prompts that guide Large Language Models (LLMs) to perform complex tasks with appropriate tools and workflows.
 
-Version: v0.3.1
+Version: v0.3.2
 
 Target Platform: BMAD v6-public-alpha
 
@@ -100,6 +100,8 @@ pip install pyyaml
 ```bash
 python install.py
 ```
+
+The installer will automatically configure the correct paths for your system, ensuring the MetaPromptAgent can access your user profile regardless of where you install it.
 
 ## The Python Script Uninstaller
 
@@ -281,7 +283,7 @@ echo 'console.log("Node.js test successful")' > test.js
 node test.js
 
 # Clean up
-cd /home/brian/Apps/00_MetaPromptAgent_v0.3.1
+cd /home/brian/Apps/00_MetaPromptAgent_v0.3.2
 rm -rf /tmp/metaprompt-test
 ```
 
