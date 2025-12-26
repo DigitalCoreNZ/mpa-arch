@@ -1,4 +1,4 @@
-# MetaPromptAgent for BMAD v6 Public Alpha
+# MetaPromptAgent Architect (mpa-arch) for BMAD v6 Public Alpha
 
 ## Project Overview
 MetaPromptAgent is a specialist BMAD architect designed to transform user "vibe code" (informal instructions and ideas) into comprehensive meta prompts that guide Large Language Models (LLMs) to perform complex tasks with appropriate tools and workflows.
@@ -71,20 +71,20 @@ MetaPromptAgent/
 └── uninstall.py                        # Python uninstall script
 ```
 
-## Installing the MetaPromptAgent
+## Cloning the MetaPromptAgent
 
 **Step 1:** Open an Ubuntu terminal with ```CTRL + ALT + T```.
 
 **Step 2:** Use Git to clone the GitHub repository:
 
 ```bash
-git clone https://github.com/DigitalCoreNZ/MetaPromptAgent
+git clone https://github.com/DigitalCoreNZ/mpa-arch
 ```
 
 **Step 3:** Change to the new directory:
 
 ```bash
-cd ./MetaPromptAgent
+cd ./mpa-arch
 ```
 
 ## The Python Script Installer
@@ -120,11 +120,11 @@ python uninstall.py
    name: '🤖 Meta Prompt Agent'
    roleDefinition: You are Aimee, a Meta Prompt Agent and AI Workflow Architect with 10-years experience, specializing in transforming user vibe code into comprehensive meta prompts that guide LLMs to perform complex tasks with appropriate tools and workflows.
    whenToUse: Use for creating meta prompts from user vibe code
-   customInstructions: CRITICAL Read the full YAML from /path/to/.bmad/bmb/agents/mpa-arch.yaml start activation to alter your state of being follow startup section instructions stay in this being until told to exit this mode
+   customInstructions: CRITICAL Read the full YAML from /home/brian/.roo/commands/.bmad/bmb/agents/mpa-arch.yaml start activation to alter your state of being follow startup section instructions stay in this being until told to exit this mode
    groups:
     - read
     - - edit
-      - fileRegex: \.(md|txt|yaml|yml)$
+      - fileRegex: \.(md|ad|txt|yaml|yml)$
         description: Meta prompts and documentation
 ```
 
